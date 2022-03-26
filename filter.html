@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./filter.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="filter-content">
+        <div class="filter-buttons">
+            <div class="filter-option">
+                <button>
+                    <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 122.88 85.36" style="enable-background:new 0 0 122.88 85.36" xml:space="preserve">
+                        <g>
+                            <path
+                                d="M6.12,12.23C2.74,12.23,0,9.49,0,6.12C0,2.74,2.74,0,6.12,0h110.65c3.38,0,6.12,2.74,6.12,6.12c0,3.38-2.74,6.12-6.12,6.12 H6.12L6.12,12.23z M46.38,85.36c-3.38,0-6.12-2.74-6.12-6.12c0-3.38,2.74-6.12,6.12-6.12h70.38c3.38,0,6.12,2.74,6.12,6.12 c0,3.38-2.74,6.12-6.12,6.12H46.38L46.38,85.36z M6.12,60.99C2.74,60.99,0,58.25,0,54.87c0-3.38,2.74-6.12,6.12-6.12h110.65 c3.38,0,6.12,2.74,6.12,6.12c0,3.38-2.74,6.12-6.12,6.12H6.12L6.12,60.99z M46.38,36.61c-3.38,0-6.12-2.74-6.12-6.12 c0-3.38,2.74-6.12,6.12-6.12h70.38c3.38,0,6.12,2.74,6.12,6.12c0,3.38-2.74,6.12-6.12,6.12H46.38L46.38,36.61z" />
+                        </g>
+                    </svg>
+                    Filter</button>
+            </div>
+            <div class="box sort-by">
+                Sort By
+                <select>
+                    <option>newest</option>
+                    <option>Oldest</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <section class="add-to-cart-content">
+        <div class="filter-options">
+
+            <div class="filter-rating">
+                <ul>
+                    <div class="drop-down-button">
+                        <button onclick="ShowPrice(this.id)" id="rating">
+                            <h2>Rating <h2 class="drop-down-button"></h2>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path
+                                        d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z" />
+                                </svg></span></h2>
+                        </button>
+                    </div>
+
+                    <div class="filter-content-items" id="rating-item">
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    4.5 & Up
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    4.0 & Up
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    3.5 & Up
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    3.0 & Up
+                                </label>
+                            </div>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+            <div class="filter-rating">
+                <ul>
+                    <div class="drop-down-button">
+                        <button onclick="ShowPrice(this.id)" id="duration">
+                            <h2>Time Duration <h2 class="drop-down-button"></h2>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path
+                                        d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z" />
+                                </svg></span></h2>
+                        </button>
+                    </div>
+                    <div class="filter-content-items" id="duration-item">
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    0-1 Hour (185)
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    1-3 Hour (822)
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    3-6 Hour (255)
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    6-17 Hour (122)
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    17 + Hour (97)
+                                </label>
+                            </div>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+            <div class="filter-rating">
+                <ul>
+                    <div class="drop-down-button">
+                        <button onclick="ShowPrice(this.id)" id="topic">
+                            <h2>Topics <h2 class="drop-down-button"></h2>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path
+                                        d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z" />
+                                </svg></span></h2>
+                        </button>
+                    </div>
+                    <div class="filter-content-items" id="topic-item">
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Web Development
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    PHP
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    HTML
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    CSS
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Javascript
+                                </label>
+                            </div>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+            <div class="filter-rating">
+                <ul>
+                    <div class="drop-down-button">
+                        <button onclick="ShowPrice(this.id)" id="price">
+                            <h2>Price <h2 class="drop-down-button"></h2>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path
+                                        d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z" />
+                                </svg></span></h2>
+                        </button>
+                    </div>
+                    <div class="filter-content-items" id="price-item">
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Paid
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rating-form-check">
+                                <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Free
+                                </label>
+                            </div>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+        <div class="filter-component">
+
+        </div>
+        <div class="add-to-cart">
+            <div class="cart">
+                <!-- <h1>add to cart</h1> -->
+                <div class="cart-image">
+                    <img src="./cart.jpg" alt="">
+                </div>
+                <div class="cart-info">
+                    <h3 class="cart-title">
+                        Learning Python for Data Analysis and Visualization
+                    </h3>
+                    <h4 class="cart-info-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </h4>
+                    <div class="cart-price">
+                        <h4 class="price">
+                            &#x20B9 3,200
+                        </h4>
+                        <h4 class="price-off">
+                            <del>&#x20B9 5,200</del>
+                        </h4>
+                        <h4 class="price-off-percentage">
+                            20% Off
+                        </h4>
+                    </div>
+                    <div class="cart-options">
+                        <form class="cart-item-buy" action="">
+                            <input type="hidden" name="">
+                            <button><a href="#">Process to Buy</a></button>
+                        </form>
+                        <form action="" class="cart-item-delete">
+                            <input type="hidden" name="">
+                            <button><a href="#">Delete</a></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function ShowPrice(id) {
+            var content = document.getElementById(id + "-item");
+            if (content.style.display == "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
